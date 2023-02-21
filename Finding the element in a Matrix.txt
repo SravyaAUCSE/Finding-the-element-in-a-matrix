@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main ()
+{
+  int i, j, a[2][6], K;
+  
+  for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 6; j++)
+	 {
+	  printf ("Enter the elements a[%d][%d]: ", i, j);
+	  scanf ("%d", &a[i][j]);
+	 } 
+	
+	printf ("\n");
+	
+    }
+    
+    
+    
+    for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 6; j++)
+	  {
+	    printf ("\t%d", a[i][j]);
+	  }
+	
+	printf ("\n");
+	
+	
+    } 
+
+
+
+printf ("\nvalue of 'K' : ");
+scanf ("%d", &K);
+
+
+ for (i = 0; i < 2; i++)
+ {
+    for (j = 0; j < 6; j++)
+    {
+    	if (K == a[i][j])
+	    {
+	        printf ("The row and column of the element %d is a[%d][%d]\n", K,i, j);
+	    }
+	  
+    }
+  }
+}
